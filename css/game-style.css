@@ -1,5 +1,21 @@
-#input-box {
+#output-box {
+    position: relative;
+    left: 532px;
     resize: none;
+    border-width: 1px;
     background-color: #000000;
     color: #00D303;
+}
+
+#input-box {
+    position: relative;
+    left: -290px;
+    top: -5px;
+    border-width: 0px;
+    background-color: #000000;
+    color: #00D303;
+}
+
+#input-box:focus {
+    outline: none;
 }
