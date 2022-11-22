@@ -11,10 +11,14 @@
 
 /* This is just some basic color and font things for every link on here */
 a:link {
+    display: inline-block;
     color: #2F4F4F;
     text-decoration: none;
+    margin-block: em * 0.5;
     padding: 10px;
     font-family: "PT Sans", Calibri, Tahoma;
+    font-size: 24px;
+    font-weight: bold;
 }
 
 a:visited {
@@ -60,9 +64,13 @@ p {
     text-align: center;
     color:#2F4F4F;
     animation-name: text-fade-in;
-    animation-duration: 12s;
+    animation-duration: 7s;
 }
 
 #main-links {
     background-color: #C0C0C0;
+    text-align: left;
+    display: block;
+    block-size: 50px;
+    margin-block: 10px;
 }
