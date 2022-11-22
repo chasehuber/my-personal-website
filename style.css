@@ -1,3 +1,68 @@
+/* Little animation that fades link color when you hover on it */
+@keyframes link-hover {
+    from {color: #2F4F4F;}
+    to {color: #A9A9A9;}
+}
+
+@keyframes text-fade-in {
+    from {color: #DCDCDC;}
+    tp {color: #2F4F4F;}
+}
+
+/* This is just some basic color and font things for every link on here */
+a:link {
+    color: #2F4F4F;
+    text-decoration: none;
+    padding: 10px;
+    font-family: "PT Sans", Calibri, Tahoma;
+}
+
+a:visited {
+    color: #2F4F4F;
+    text-decoration: none;
+}
+
+a:active {
+    color: #2F4F4F;
+    text-decoration: none;
+}
+
+a:hover {
+    animation-name: link-hover;
+    animation-duration: 1s;
+    color: #A9A9A9
+}
+
 body {
-    background: blue;
+    background-color: #DCDCDC;
+}
+
+p {
+    font-family: "PT Sans", Calibri, Tahoma;
+}
+
+#main-text {
+    position: relative;
+    top: 2em;
+    left: em * 0.5;
+    font-size: 58px;
+    text-align: center;
+    color:#2F4F4F;
+    animation-name: text-fade-in;
+    animation-duration: 6s;
+}
+
+#sub-text {
+    position: relative;
+    top: 2em;
+    left: em * 0.5;
+    font-size: 36px;
+    text-align: center;
+    color:#2F4F4F;
+    animation-name: text-fade-in;
+    animation-duration: 12s;
+}
+
+#main-links {
+    background-color: #C0C0C0;
 }
