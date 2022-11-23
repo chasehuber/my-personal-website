@@ -1,22 +1,31 @@
+#game-title {
+    text-align: center;
+    color: #2F4F4F;
+    font-family: "PT Sans", Calibri, Tahoma;
+}
+
 #output-box {
     position: relative;
     left: 532px;
     resize: none;
     border-width: 1px;
-    overflow: hidden;
     background-color: #000000;
     color: #00D303;
 }
 
 #input-box {
     position: relative;
-    left: -290px;
-    top: -5px;
-    border-width: 0px;
+    left: 533px;
+    border-style: solid;
+    border-width: 1px;
     background-color: #000000;
     color: #00D303;
 }
 
-#input-box:focus {
+#input-btn {
+    visibility: hidden;
+}
+
+#input-box:focus, #output-box:focus {
     outline: none;
 }

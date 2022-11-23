@@ -29,6 +29,7 @@ function updateOutputLog() {
     }
 }
 
+
 function scrollOutputToBottom() {
     outputLog.scrollTop = outputLog.scrollHeight;
 }
