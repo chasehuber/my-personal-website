@@ -6,7 +6,7 @@
 
 @keyframes text-fade-in {
     from {color: #DCDCDC;}
-    tp {color: #2F4F4F;}
+    to {color: #2F4F4F;}
 }
 
 /* This is just some basic color and font things for every link on here */
@@ -62,9 +62,9 @@ p {
     left: em * 0.5;
     font-size: 36px;
     text-align: center;
-    color:#2F4F4F;
+    color: #2F4F4F;
     animation-name: text-fade-in;
-    animation-duration: 7s;
+    animation-duration: 8s;
 }
 
 #main-links {
