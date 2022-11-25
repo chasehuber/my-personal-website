@@ -4,18 +4,24 @@
     font-family: "PT Sans", Calibri, Tahoma;
 }
 
+#output-area {
+    text-align: center;
+}
+
 #output-box {
     position: relative;
-    left: 532px;
     resize: none;
     border-width: 1px;
     background-color: #000000;
     color: #00D303;
 }
+#input-area {
+    text-align: center;
+}
 
 #input-box {
     position: relative;
-    left: 533px;
+    left: -10px;
     border-style: solid;
     border-width: 1px;
     background-color: #000000;
