@@ -1,37 +1,42 @@
 let input = document.getElementById("input-box");
-let outputLog = document.getElementById("output-box");
+let output = document.getElementById("output-box");
+let prevOutput = "";
+let nextOutput = "";
+let inputCount = 0;
 
 function addingEventListener() {
     const inputBtn = document.getElementById("input-btn");
 
-    function clickAlert() {
-        alert("I was clicked!");
-    }
-
     input.addEventListener("keypress", (e) => {
         if (e.key === "Enter") {
             e.preventDefault();
-            updateOutputLog();
+            inputHandler();
         }
     });
 
 }
 
-function updateOutputLog() {
-    if (outputLog.value != "") {
-        outputLog.value = `${outputLog.value}\n>${input.value}`;
-        scrollOutputToBottom();
-        input.value = "";
+function inputHandler() {
+    prevOutput = output.value;
+    if (input.value === "start") {
+        nextOutput = output.value + `\n>${input.value}` + "\n>You're watching Adventure Call! My name is Falconhoof, I will be your guide on your quest. Greetings Line 4, what is your name?";
+        updateOutputLog();
+        inputCount++;
     }
     else {
-        outputLog.value = `>${input.value}`;
-        input.value = "";
+        nextOutput = prevOutput + `\n>${input.value}`;
+        updateOutputLog();
     }
 }
 
+function updateOutputLog() {
+    output.value = nextOutput;
+    scrollOutputToBottom();
+    input.value = "";
+}
 
 function scrollOutputToBottom() {
-    outputLog.scrollTop = outputLog.scrollHeight;
+    output.scrollTop = output.scrollHeight;
 }
 
 addingEventListener();
